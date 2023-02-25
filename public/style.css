@@ -1,0 +1,176 @@
+body {
+    background: rgb(61, 119, 177);
+}
+
+/* Center everything? */
+.main{
+    display: flex;
+    flex-direction: column;
+
+    align-items: center;
+}
+/* It goes.. */
+/* The section with the entry forms... */
+.entry-container{
+    display: flex;
+    flex-direction: row;
+    background: green;
+
+    height: 200px;
+    width: 200px;
+
+    border-style: solid;
+    border-width: 1px;
+
+    justify-content: space-evenly;
+}
+
+/* The name-entry container.... */
+.name-container{
+    display: flex;
+    flex-direction: row;
+    color: rgb(231, 231, 121);
+
+    height: fit-content;
+    width: fit-content;
+
+    border-style: solid;
+    border-width: 5px;
+
+    justify-content: space-around;
+}
+
+/* and the breed-entry container... */
+.breed-container{
+    display: flex;
+    flex-direction: row;
+    background: rgb(223, 105, 62);
+
+    height: 20px;
+    width: 20px;
+
+    border-style: solid;
+    border-width: 1px;
+}
+
+/* Then, the whole roster container.... */
+.roster-container{
+    display: flex;
+    flex-direction: row;
+    background: rgb(231, 231, 121);
+
+    height: fit-content;
+    width: fit-content;
+
+    /* border-style: solid;
+    border-width: 1px; */
+
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+
+    margin-top: 2vh;
+}
+
+/* which holds the dog's profile container. */
+.dog-container{
+    display: flex;
+    flex-direction: column;
+    background: rgb(88, 88, 195);
+
+    align-items: center;
+
+    height: 50vh;
+    width: 30vh;
+
+    border-style: solid;
+    border-width: 1px;
+    border-radius: 10px;
+
+    justify-content: space-evenly;
+    margin-top: 20px;
+}
+
+/* Holds the title and id number. */
+.dog-id{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    flex-direction: row;
+    background: orange;
+
+    font-size: 3vh;
+}
+
+.dog-title{
+    margin: 0;
+    padding-right: 2vh;
+}
+
+.dog-id-number{
+    margin: 0;
+    padding-left: 2vh;
+}
+/* THe dog photo we'll inline style just FYI. */
+
+/* This contianer holds the "details" and "delete" containers */
+.dog-options{
+    display: flex;
+    flex-direction: column;
+    background: lightgreen;
+
+    align-items: center;
+    height: 20px;
+    width: fit-content;
+}
+
+.dog-details{
+    display: flex;
+    background: red;
+
+    height: fit-content;
+    width: fit-content;
+}
+
+.dog-delete{
+    display: flex;
+    background: darkred;
+    
+    height: fit-content;
+    width: fit-content;
+}
+
+.dog-page{
+    display: flex;
+    flex-direction: column;
+
+    align-items: center;
+}
+.return-home{
+    background: lightgreen;
+    font-size: 20px;
+    display: flex;
+    
+}
+/* After clicking "Details", this container holds data */
+.dog-info{
+    display: flex;
+    flex-direction: row;
+
+
+    width: fit-content;
+    height: fit-content;
+}
+
+.dog-text-info{
+    display: flex;
+    flex-direction: column;
+
+    justify-content: center;
+    
+    background: rgb(198, 243, 174);
+    font-size: 20px;
+    
+    background: rgb(193, 239, 147);
+
+}
