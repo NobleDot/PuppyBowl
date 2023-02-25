@@ -1,9 +1,10 @@
 import React from 'react';
 import { useState, useEffect } from 'react';
 
+// I don't really use this code, and despite it being "fluff", we might
+// do stuff like this in the future so I'm leavin' all this here
 async function sendNewPuppyRequest(event) {
     event.preventDefault(); 
-
     try {
         const response = await fetch('https://fsa-puppy-bowl.herokuapp.com/api/2209-ftb-mt-web-ft/players', {
             method: "POST",

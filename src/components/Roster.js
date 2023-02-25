@@ -6,6 +6,7 @@ const Roster = (props) => {
 
     const { dogData } = props;
 
+    // Loop through the data and populates the HTML.
     return (
         <div>
             <div className = "roster-container">

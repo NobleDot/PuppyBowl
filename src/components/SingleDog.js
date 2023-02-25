@@ -3,6 +3,7 @@ import { Link, useParams } from "react-router-dom";
 const SingleDog = (props) => {
     const { id } = useParams(); 
 
+    // Find the matching puppy
     function filterDogs() {
         let newDogs = [];
         for (let i=0; i < props.dogData.length; i++ ) {
@@ -12,8 +13,7 @@ const SingleDog = (props) => {
         }
     }
     
-    let currDog = filterDogs() 
-    console.log(currDog)
+    let currDog = filterDogs();
     return (
         <section className = "dog-page">
             <Link to={`/dog`} className= "return-home"> Go home! </Link>

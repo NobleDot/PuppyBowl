@@ -1,3 +1,5 @@
+// Author: NobleDot
+
 import { createRoot } from "react-dom/client";
 import { useState, useEffect } from "react"; 
 
@@ -5,18 +7,16 @@ import { BrowserRouter, Routes, Route, Link } from "react-router-dom"
 import {MainOkay, SingleDog} from '../src/components/index'
 import {Roster} from '../src/components/index'
 
+// This main App mostly fetches data and stores it.
 const App = () => {
     const [puppies, setPuppies] = useState([]);
     const [newPuppyName, setNewPuppyName] = useState("");
     const [newPuppyBreed, setNewPuppyBreed] = useState(""); 
 
-
     async function fetchPuppyData() {
         try {
             const response = await fetch('https://fsa-puppy-bowl.herokuapp.com/api/2209-ftb-mt-web-ft/players');
-
             const translatedData = await response.json(); 
-
             setPuppies(translatedData.data.players)
         } catch (error) {
             console.log(error); 
